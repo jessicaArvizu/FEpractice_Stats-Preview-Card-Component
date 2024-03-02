@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./public/favicon-32x32.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Frontend Mentor | Stats preview card component</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,19 +18,29 @@
 
   <main class="h-screen flex items-center justify-center text-t-white">
     <div class="flex flex-col w-[1000px] lg:flex-row bg-dark-desaturated-blue rounded-xl	overflow-hidden">
-      <div class="lg:w-1/2 lg:order-2">
-        <img src="public/image-header-desktop.jpg" alt="Header Image">
+      <div class="lg:w-1/2 lg:order-2 relative">
+        <img src="/image-header-desktop.jpg" alt="Header Image" class="h-full w-full">
+        <div class="absolute inset-0 bg-soft-violet opacity-50"></div>
       </div>
-      <div class="lg:w-1/2 p-8 lg:order-1">
+      <div class="lg:w-1/2 p-20 lg:order-1">
         <p>
-          Get insights that help your business grow. Discover the benefits of data analytics and make better decisions
+        <h1 class="text-4xl font-bold">
+          Get <span class="text-soft-violet">insights</span>
+          that help your business grow.
+        </h1>
+        <h2>
+          Discover the benefits of data analytics and make
+          better decisions
           regarding revenue, customer experience, and overall efficiency.
+        </h2>
         </p>
-        <ul>
-          <li>10k+ companies</li>
-          <li>314 templates</li>
-          <li>12m+ queries</li>
-        </ul>
+        <div>
+          <ul>
+            <li>10k+ companies</li>
+            <li>314 templates</li>
+            <li>12m+ queries</li>
+          </ul>
+        </div>
       </div>
     </div>
   </main>
